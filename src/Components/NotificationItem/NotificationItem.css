@@ -1,0 +1,96 @@
+.notificationItem {
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--Very-light-grayish-blue);
+  column-gap: 1rem;
+  cursor: pointer;
+}
+.notificationItem .notifyContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.notificationItem .notifyContent .notifyTitle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+.notificationItem .actionText {
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+  padding-right: 0.5rem;
+}
+.notificationItem .userName {
+  display: inline-block;
+}
+.notificationItem .userName a {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+  padding-right: 0.5rem;
+}
+.notificationItem .postLink a , 
+.notificationItem .groupLink a {
+  color: var(--Dark-grayish-blue);
+  font-weight: 800;
+  padding-right: 0.5rem;
+}
+.notificationItem .userName a:hover,
+.notificationItem .postLink a:hover,
+.notificationItem .groupLink a:hover {
+  color: var(--Blue);
+}
+
+.notificationItem .dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--Red);
+}
+.notificationItem .notifyTime {
+  color: var(--Grayish-blue);
+  font-weight: 500;
+}
+.notificationItem .notifyContent .actionPicture,
+.notificationItem .userImg {
+  width: 45px;
+  height: 45px;
+}
+.notificationItem .notifyContent .actionPicture:hover{
+  box-shadow:  0px 0px 29px 4px  var(--Light-grayish-blue-1);
+}
+.notificationItem .notifyContent .message {
+  background-color: none;
+  border: 0.5px solid var(--Light-grayish-blue-2);
+  color: var(--Dark-grayish-blue);
+  padding: 1rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+.notificationItem .notifyContent .message:hover {
+  background-color: var(--Light-grayish-blue-1);
+  border: 0.5px solid var(--White);
+}
+.read {
+  background-color: transparent;
+}
+@media only screen and (max-width: 576px) {
+  .notificationItem {
+    font-size: 0.840rem;
+  }
+  .notificationItem .notifyContent .actionPicture,
+  .notificationItem .userImg {
+    width: 40px;
+    height: 40px;
+  }
+  .notificationItem .notifyContent .notifyTitle .message {
+    font-size: 14px;
+    padding: 1rem;
+   
+  }
+}

@@ -1,0 +1,16 @@
+main{
+  max-width: 800px;
+  width: 100%;
+  background-color: var(--White);
+  border-radius: .5rem;
+  padding: 2rem 2rem 0 2rem;
+  box-shadow: 11px 14px 45px -21px var(--Light-grayish-blue-2);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+@media only screen and (max-width:576px){
+  main{
+    padding: 3rem 1rem;
+  }
+}

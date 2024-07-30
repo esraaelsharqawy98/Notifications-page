@@ -1,0 +1,33 @@
+#notificationHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#notificationHeader h1{
+    color: var(--Very-dark-blue);
+    font-size:  1.375rem;
+    font-weight: 800;
+    display: flex;
+    column-gap: .5rem;
+}
+#badge{
+    background-color: var(--Blue);
+    color: var(--White);
+    font-size: 0.875rem;
+    padding: 3px 10px;
+    border-radius: 0.25rem;
+    font-weight: 800;
+    align-self: center;
+}
+#markReadLink{
+     background: transparent;
+     border: none;
+     color: var(--Dark-grayish-blue);
+     cursor: pointer;
+     font-size: 1rem;
+     font-weight: 500;
+     transition: color .3s ease;
+}
+#markReadLink:hover{
+    color: var(--Blue);
+}
